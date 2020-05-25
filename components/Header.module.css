@@ -1,3 +1,12 @@
+
+hr.italy {
+    background-image: url('/images/bg-italy.svg');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 18px;
+    margin: 0;
+    border: none;
+}
 #header {
     min-width: 320px;
     width: 100%;
@@ -20,7 +29,7 @@
     justify-content: space-between;
 }
 
-#header .menu .btn-register {
+#header .menu .btnRegister {
     background-color: var(--green);
     color: var(--white);
     margin: 1em;
@@ -60,7 +69,7 @@
     outline: none;
 }
 
-#btn-open, #btn-close {
+#btnOpen, #btnClose {
     position: absolute;
     right: 0;
 }
@@ -109,7 +118,7 @@
         right: calc(100vw - 200px);
         top: 17px;
     }
-    #btn-open, #btn-close {
+    #btnOpen, #btnClose {
         display: none;
     }
     #header .menu {
@@ -143,7 +152,7 @@
     #header .menu ul li a:hover {
         color: var(--black);
     }
-    #header .menu .btn-register {
+    #header .menu .btnRegister {
         min-width: 276px;
         margin: 1.55em;
     }
