@@ -1,17 +1,44 @@
-#our-history.page header {
+
+
+#ourHistory.page {
+    flex-direction: column;
+}
+#ourHistory.page .pageHeader {
+    width: 100%;
+    flex-direction: column;
+}
+#ourHistory.page .headerText {
+    height: 210px;
+    width: 100%;
+    background-size: cover;
+    filter: brightness(0.5);
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--white);
+    padding: 1em;
+}
+
+#ourHistory.page .headerText ul,
+#ourHistory.page .headerText li, 
+#ourHistory.page .headerText h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.headerText {
     background-image: url('/images/header-our-history.png');
 }
 
-#our-history.page .columns {
+#ourHistory.page .columns {
     flex-direction: column;
     padding: 16px;
 }
 
-#our-history.page .column {
+#ourHistory.page .column {
     flex-direction: column;
 }
 
-#our-history.page .column h2 {
+#ourHistory.page .column h2 {
     margin: 0;
     margin-top: .75em;
     padding-bottom: .5em;
@@ -23,35 +50,35 @@
     color: var(--gray5);
 }
 
-#our-history.page .column h2.green {
+#ourHistory.page .column h2.green {
     border-bottom-color: var(--green);
 }
 
-#our-history.page .column h2.gray {
+#ourHistory.page .column h2.gray {
     border-bottom-color: var(--grayC);
 }
 
-#our-history.page .column h2.red {
+#ourHistory.page .column h2.red {
     border-bottom-color: var(--red);
 }
 
-#our-history.page p {
+#ourHistory.page p {
     margin: 0;
     font-size: 18px;
     color: var(--gray5);
     margin-bottom: 1em;
 }
 
-#our-history.page figure {
+#ourHistory.page figure {
     margin: 0;
     flex-direction: column;
 }
 
-#our-history.page figure img {
+#ourHistory.page figure img {
     width: 100%;
 }
 
-#our-history.page figcaption {
+#ourHistory.page figcaption {
     width: 100%;
     color: var(--gray6);
     font-size: 35px;
@@ -59,55 +86,55 @@
     font-weight: bold;
 }
 
-#our-history.page figcaption small {
+#ourHistory.page figcaption small {
     font-size: 30px;
     display: block;
     font-weight: 400;
 }
 
-#our-history.page .text {
+#ourHistory.page .text {
     padding: 0 16px;
     flex-direction: column;
 }
 
-#our-history.page .ceo {
+#ourHistory.page .ceo {
     flex-direction: column;
 }
 
 @media (min-width: 576px) {
-    #our-history.page header {
+    #ourHistory.page .headerText {
         background-image: url('/images/header-our-history@2x.png');
     }
 }
 
 @media (min-width: 992px) {
-    #our-history.page .columns {
+    #ourHistory.page .columns {
         flex-direction: row;
     }
-    #our-history.page .column {
+    #ourHistory.page .column {
         margin: 4em;
     }
-    #our-history.page header {
+    #ourHistory.page .headerText {
         background-image: url('/images/header-our-history@3x.png');
         background-position: 0px -24vw;
     }
-    #our-history.page .ceo {
+    #ourHistory.page .ceo {
         flex-direction: row;
     }
-    #our-history.page .ceo > figure,
-    #our-history.page .ceo > section {
+    #ourHistory.page .ceo > figure,
+    #ourHistory.page .ceo > section {
         flex: 1;
     }
-    #our-history.page .ceo .text {
+    #ourHistory.page .ceo .text {
         margin-top: 150px;
     }
-    #our-history.page .ceo .text p {
+    #ourHistory.page .ceo .text p {
         margin-left: 35px;
     }
-    #our-history.page .ceo > figure {
+    #ourHistory.page .ceo > figure {
         position: relative;
     }
-    #our-history.page .ceo figcaption {
+    #ourHistory.page .ceo figcaption {
         position: absolute;
         top: 0;
         right: -50vw;
@@ -115,13 +142,13 @@
 }
 
 @media (min-width: 1200px) {
-    #our-history.page header {
+    #ourHistory.page .headerText {
         background-position: 0px -30vw;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    #our-history.page .column h2.gray {
+    #ourHistory.page .column h2.gray {
         border-bottom-color: var(--black);
     }
 }

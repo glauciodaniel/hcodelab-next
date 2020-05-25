@@ -27,6 +27,10 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/our-history": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

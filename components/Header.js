@@ -1,7 +1,14 @@
+import Head from 'next/head'
 import styles from './Header.module.css';
 
 export default function Header() {
     return (
+    <>
+        <Head>
+            <meta charSet="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Ferrari</title>
+        </Head>
         <header id={ styles.header} >
             <div id={ styles.overlay} data-close="menu"></div>
             <a href="/"><img src="images/logo.svg" id={ styles.logo} alt="Logo" /></a>
@@ -51,7 +58,7 @@ export default function Header() {
                     </a>
             </nav>
         </header>
-
+    </>
     )
 
 }

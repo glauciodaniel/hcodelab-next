@@ -1,5 +1,4 @@
  
-import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styles from '../components/Home.module.css'
@@ -9,11 +8,6 @@ export default function Index(){
 
     return (
         <>
-            <Head>
-                <meta charSet="UTF-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Ferrari</title>
-            </Head>
             <Header />
             <main id={styles.home}>        
                 <hr className="italy" />

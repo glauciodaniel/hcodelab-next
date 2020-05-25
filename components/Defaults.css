@@ -6,7 +6,7 @@
 body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture {
     display: flex;
 }
-#__next {
+#__next, main{
     flex-direction: column;
 }
 body {
