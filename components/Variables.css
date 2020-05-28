@@ -20,6 +20,8 @@
     --grayC: #CCC;
     --gray4: #485159;
     --grayD: #DDDDDD;
+    --grayE: #EBEAE7;
+    --grayF: #F0F1F2;
 }
 
 @media (prefers-color-scheme: dark) {

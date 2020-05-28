@@ -1,5 +1,23 @@
-#header {
+#content {
+    background-color: var(--grayE);
     height: 100vh;
+    display: block;
+}
+
+#header {
+    height: 90px;
+}
+
+#header button {
+    background: none;
+    border: none;
+    padding: 13px;
+    outline: none;
+}
+
+#btn-open, #btn-close {
+    position: absolute;
+    right: 0;
 }
 
 #header .menu {
@@ -10,7 +28,7 @@
     justify-content: space-between;
     width: 300px;
     position: fixed;
-    right: 0;
+    right: -300px;
 }
 
 .header-top {
@@ -19,19 +37,17 @@
 
 .logo {
     padding: 15px 0;
-    border-bottom: solid 1px var(--gray4);
-}
-
-.image-ferrari {
     margin: 0 auto;
+    align-items: center;
 }
 
 .user-info {
     align-items: center;
     flex-direction: column;
     margin-top: 22px;
-    padding-bottom: 27px;
+    padding: 27px 0;
     border-bottom: 1px solid var(--gray4);
+    border-top: solid 1px var(--gray4);
 }
 
 .user-photo {
