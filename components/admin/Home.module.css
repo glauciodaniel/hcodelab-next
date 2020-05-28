@@ -17,6 +17,7 @@
 
 .user {
     justify-content: space-between;
+    max-width: 436px;
     width: 100%;
     flex-direction: column;
     margin-bottom: 60px;
@@ -47,7 +48,7 @@
 }
 
 .user-photo {
-    height: 150px;
+    height: 120px;
 }
 
 .actions {
@@ -65,4 +66,27 @@
     border: 1px solid var(--green);
     border-radius: 4px;
     padding: 16px;
+}
+
+@media (min-width: 576px) {
+    #home {
+        flex-direction: column;
+    }
+
+    #home .users {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #home .users .user {
+        flex: 1;
+        max-width: 360px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    #home .users .user {
+        margin: 30px 5px;
+    }
 }

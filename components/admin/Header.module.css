@@ -15,6 +15,10 @@
     outline: none;
 }
 
+#header #ferrari-logo {
+    z-index: 2;
+}
+
 #btn-open, #btn-close {
     position: absolute;
     right: 0;
