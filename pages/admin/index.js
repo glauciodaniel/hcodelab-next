@@ -1,8 +1,56 @@
 import styles from '../../components/admin/Header.module.css'
 import IconFerrariMobile from '../../components/admin/IconFerrariMobile'
 import stylesHome from '../../components/admin/Home.module.css'
+import stylesFooter from '../../components/admin/Footer.module.css'
 
 export default function Index() {
+
+    const users = [{
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }];
 
     return (
         <div id={styles.content}>
@@ -61,8 +109,6 @@ export default function Index() {
                     
                     </div>
 
-                    <p className={styles.rights}>2020 © Hcode. All rights reserved.</p>
-
                 </div>
 
             </header>
@@ -71,39 +117,47 @@ export default function Index() {
 
                 <h1>Usuários</h1>
 
-                <hr class="italy" />
+                <hr className="italy" />
 
                 <section className={stylesHome.users}>
 
-                    <div className={stylesHome.user}>
+                    {users.map(user => (
 
-                        <div className={stylesHome['user-info']}>
+                        <div className={stylesHome.user}>
 
-                            <div className={stylesHome['user-data']}>
+                            <div className={stylesHome['user-info']}>
 
-                                <h2>João Rangel</h2>
-                                
-                                <p>joaohcrangel@gmail.com</p>
+                                <div className={stylesHome['user-data']}>
 
-                                <p>18 de março de 2020</p>
+                                    <h2>{user.name}</h2>
+                                    
+                                    <p>{user.email}</p>
+
+                                    <p>{user.date}</p>
+
+                                </div>
+
+                                <img src={"images/" + user.photo} className={stylesHome['user-photo']} />
 
                             </div>
 
-                            <img src="images/user-photo.png" className={stylesHome['user-photo']} />
+                            <div className={stylesHome.actions}>
+
+                                <button>Editar</button>
+
+                            </div>
 
                         </div>
 
-                        <div className={stylesHome.actions}>
-
-                            <button>Editar</button>
-
-                        </div>
-
-                    </div>
+                    ))}
 
                 </section>
 
             </main>
+
+            <footer id={stylesFooter.footer}>
+                <p className={stylesFooter.rights}>2020 © Hcode. All rights reserved.</p>
+            </footer>
 
         </div>
     )

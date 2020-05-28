@@ -93,11 +93,3 @@
 .links a {
     margin-left: 14px;
 }
-
-.rights {
-    color: var(--white);
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    font-weight: bold;
-}
