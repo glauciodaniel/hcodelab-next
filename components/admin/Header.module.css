@@ -1,9 +1,3 @@
-#content {
-    background-color: var(--grayE);
-    height: 100vh;
-    display: block;
-}
-
 #header {
     height: 90px;
 }

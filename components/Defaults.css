@@ -6,6 +6,13 @@
 body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture {
     display: flex;
 }
+
+#content {
+    background-color: var(--grayE);
+    height: 100vh;
+    display: block;
+}
+
 #__next, main{
     flex-direction: column;
 }
