@@ -18,6 +18,8 @@
     --gray5: #555;
     --gray6: #666;
     --grayC: #CCC;
+    --gray4: #485159;
+    --grayD: #DDDDDD;
 }
 
 @media (prefers-color-scheme: dark) {

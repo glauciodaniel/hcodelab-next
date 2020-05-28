@@ -1,0 +1,87 @@
+#header {
+    height: 100vh;
+}
+
+#header .menu {
+    background-color: var(--dark);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    position: fixed;
+    right: 0;
+}
+
+.header-top {
+    flex-direction: column;
+}
+
+.logo {
+    padding: 15px 0;
+    border-bottom: solid 1px var(--gray4);
+}
+
+.image-ferrari {
+    margin: 0 auto;
+}
+
+.user-info {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 22px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid var(--gray4);
+}
+
+.user-photo {
+    width: 100px;
+    height: 100px;
+}
+
+.user-info h2, .user-info p {
+    color: var(--white);
+}
+
+.user-info h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 10px 0 0 0;
+}
+
+.user-info p, .user-info a {
+    font-weight: 600;
+}
+
+.user-info a, .links a {
+    color: var(--grayD);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.links {
+    flex-direction: column;
+    padding: 0;
+}
+
+.links .link {
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--gray4);
+}
+
+.links img {
+    padding: 0 14px;
+}
+
+.links a {
+    margin-left: 14px;
+}
+
+.rights {
+    color: var(--white);
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
