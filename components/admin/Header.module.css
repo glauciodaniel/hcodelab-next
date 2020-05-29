@@ -9,7 +9,7 @@
     outline: none;
 }
 
-#header #ferrari-logo {
+#header .logo {
     z-index: 2;
 }
 
@@ -45,7 +45,7 @@
     margin-top: 22px;
     padding: 27px 0;
     border-bottom: 1px solid var(--gray4);
-    border-top: solid 1px var(--gray4);
+    border-top: 1px solid var(--gray4);
 }
 
 .user-photo {
@@ -90,4 +90,28 @@
 
 .links a {
     margin-left: 14px;
+}
+
+@media (min-width: 992px) {
+    #header .menu {
+        left: 0;
+    }
+
+    .logo {
+        margin: 0;
+        width: 300px;
+    }
+
+    .logo #btn-open {
+        right: calc(100vw - 370px);
+    }
+
+    #header {
+        height: 60px;
+        background-color: var(--white);
+    }
+
+    .user-info {
+        margin-top: 60px;
+    }
 }

@@ -177,6 +177,11 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+    #content main {
+        width: calc(100vw - 300px);
+        position: absolute;
+        right: 0;
+    }
     .page .page-header {
         width: 100%;
         flex-direction: column-reverse;

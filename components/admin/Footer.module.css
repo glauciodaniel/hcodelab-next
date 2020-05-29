@@ -7,3 +7,13 @@
 #footer .rights {
     font-weight: bold;
 }
+
+@media (min-width: 992px) {
+    #footer {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        background: none;
+        color: var(--white);
+    }
+}
