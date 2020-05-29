@@ -3,9 +3,13 @@
 }
 
 .users {
-    margin-top: 20px;
-    flex-direction: column;
-    padding: 0;
+    padding: 10px;
+    height: calc(100vh - 173px);
+    overflow: auto;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: auto;
+    grid-gap: 10px;
 }
 
 .user-info {
@@ -42,5 +46,23 @@
     #home .users {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px) {
+    .users {
+        grid-template-columns: auto auto;
+    }
+}
+@media (min-width: 1200px) {
+    .home {
+        width: calc(100vw - 317px);
+    }
+    .users {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (min-width: 1720px) {
+    .users {
+        grid-template-columns: auto auto auto auto;
     }
 }

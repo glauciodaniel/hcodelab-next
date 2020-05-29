@@ -4,16 +4,24 @@
     align-items: center;
 }
 
-#footer .rights {
-    font-weight: bold;
-}
-
 @media (min-width: 992px) {
     #footer {
-        width: 300px;
         position: fixed;
         bottom: 0;
         background: none;
-        color: var(--white);
+        color:  var(--grayC);
+        z-index: 2;
+        font-size: 12px;
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -65px;
+        bottom: 90px;
+        transition: all .2s ease-in-out;
+    }
+    #footer.open {
+        width: 300px;
+        transform: rotate(0deg);
+        left: 0;
+        bottom: 0;      
     }
 }

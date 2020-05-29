@@ -1,9 +1,8 @@
-import Header from '../../../components/admin/Header'
 import HeaderTitle from '../../../components/admin/HeaderTitle'
 import styles from '../../../components/admin/Home.module.css'
-import Footer from '../../../components/admin/Footer'
 import Card from '../../../components/admin/Card'
 import Button from '../../../components/admin/Button'
+import Layout from '../../../components/admin/Layout'
 
 export default function Index() {
 
@@ -61,50 +60,59 @@ export default function Index() {
         email: 'joaohcrangel@gmail.com',
         date: '18 de março de 2020',
         photo: 'user-photo.png'
+    }, {
+        id: 10,
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        id: 11,
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
+    }, {
+        id: 12,
+        name: 'João Rangel',
+        email: 'joaohcrangel@gmail.com',
+        date: '18 de março de 2020',
+        photo: 'user-photo.png'
     }];
 
     return (
-        <div id="content">
+        <Layout>
 
-            <Header />
+            <HeaderTitle text="Usuários" />
 
-            <main id={styles.home}>
+            <section className={styles.users}>
 
-                <HeaderTitle text="Usuários" />
+                {users.map(user => (
 
-                <section className={styles.users}>
+                    <Card actions={<Button>Editar</Button>} key={user.id}> {/* Poderemos fazer essa refatoração depois */}
 
-                    {users.map(user => (
+                        <div className={styles['user-info']}>
 
-                        <Card actions={<Button>Editar</Button>} key={user.id}> {/* Poderemos fazer essa refatoração depois */}
+                            <div className={styles['user-data']}>
 
-                            <div className={styles['user-info']}>
+                                <h2>{user.name}</h2>
+                                
+                                <p>{user.email}</p>
 
-                                <div className={styles['user-data']}>
-
-                                    <h2>{user.name}</h2>
-                                    
-                                    <p>{user.email}</p>
-
-                                    <p>{user.date}</p>
-
-                                </div>
-
-                                <img src={"/images/" + user.photo} className={styles['user-photo']} />
+                                <p>{user.date}</p>
 
                             </div>
 
-                        </Card>
+                            <img src={"/images/" + user.photo} className={styles['user-photo']} />
 
-                    ))}
+                        </div>
 
-                </section>
+                    </Card>
 
-            </main>
+                ))}
 
-            <Footer />
-
-        </div>
+            </section>
+        </Layout>
     )
 
 }
