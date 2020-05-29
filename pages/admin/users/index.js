@@ -1,6 +1,8 @@
-import Header from '../../components/admin/Header'
-import styles from '../../components/admin/Home.module.css'
-import Footer from '../../components/admin/Footer'
+import Header from '../../../components/admin/Header'
+import HeaderTitle from '../../../components/admin/HeaderTitle'
+import styles from '../../../components/admin/Home.module.css'
+import Footer from '../../../components/admin/Footer'
+import Card from '../../../components/admin/Card'
 
 export default function Index() {
 
@@ -67,15 +69,13 @@ export default function Index() {
 
             <main id={styles.home}>
 
-                <h1>Usuários</h1>
-
-                <hr className="italy" />
+                <HeaderTitle text="Usuários" />
 
                 <section className={styles.users}>
 
                     {users.map(user => (
 
-                        <div className={styles.user} key={user.id}>
+                        <Card btnText="Editar" key={user.id}> {/* Poderemos fazer essa refatoração depois */}
 
                             <div className={styles['user-info']}>
 
@@ -89,17 +89,11 @@ export default function Index() {
 
                                 </div>
 
-                                <img src={"images/" + user.photo} className={styles['user-photo']} />
+                                <img src={"/images/" + user.photo} className={styles['user-photo']} />
 
                             </div>
 
-                            <div className={styles.actions}>
-
-                                <button>Editar</button>
-
-                            </div>
-
-                        </div>
+                        </Card>
 
                     ))}
 

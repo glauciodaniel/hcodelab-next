@@ -21,11 +21,11 @@ export default function Header() {
 
             <div className={styles.menu}>
                 
-                <div className={styles['header-top']}>
+                <nav className={styles['header-top']}>
 
                     <div className={styles['user-info']}>
 
-                        <img src="images/user-profile-photo.png" className={styles['user-photo']} />
+                        <img src="/images/user-profile-photo.png" className={styles['user-photo']} />
 
                         <h2>João Rangel</h2>
 
@@ -38,26 +38,26 @@ export default function Header() {
                     <ul className={styles.links}>
 
                         <li className={styles.link}>
-                            <img src="images/icon-users.svg" />
+                            <img src="/images/icon-users.svg" />
 
                             <a href="#">Usuários</a>
                         </li>
 
                         <li className={styles.link}>
-                            <img src="images/icon-contacts.svg" />
+                            <img src="/images/icon-contacts.svg" />
 
                             <a href="#">Contatos</a>
                         </li>
 
                         <li className={styles.link}>
-                            <img src="images/icon-logout.svg" />
+                            <img src="/images/icon-logout.svg" />
 
                             <a href="#">Sair</a>
                         </li>
 
                     </ul>
                 
-                </div>
+                </nav>
 
             </div>
 
