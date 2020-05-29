@@ -11,11 +11,11 @@ export default function Card(props) {
 
             </div>
 
-            <div className={styles.actions}>
+            {props.actions && <div className={styles.actions}>
 
-                <button className="button">{props.btnText}</button>
+                {props.actions}
 
-            </div>
+            </div>}
 
         </div>
     )

@@ -11,7 +11,7 @@
 @media (min-width: 992px) {
     #footer {
         width: 300px;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         background: none;
         color: var(--white);

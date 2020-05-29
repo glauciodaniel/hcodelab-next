@@ -3,6 +3,7 @@ import HeaderTitle from '../../../components/admin/HeaderTitle'
 import styles from '../../../components/admin/Home.module.css'
 import Footer from '../../../components/admin/Footer'
 import Card from '../../../components/admin/Card'
+import Button from '../../../components/admin/Button'
 
 export default function Index() {
 
@@ -75,7 +76,7 @@ export default function Index() {
 
                     {users.map(user => (
 
-                        <Card btnText="Editar" key={user.id}> {/* Poderemos fazer essa refatoração depois */}
+                        <Card actions={<Button>Editar</Button>} key={user.id}> {/* Poderemos fazer essa refatoração depois */}
 
                             <div className={styles['user-info']}>
 

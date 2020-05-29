@@ -4,6 +4,7 @@ import HeaderTitle from '../../../components/admin/HeaderTitle'
 import Footer from '../../../components/admin/Footer'
 import Card from '../../../components/admin/Card'
 import styles from '../../../components/admin/UserEdit.module.css'
+import Button from '../../../components/admin/Button'
 
 export default function Users() {
 
@@ -29,7 +30,7 @@ export default function Users() {
 
                 <section className={styles.cards}>
 
-                    <Card btnText="Salvar" className={styles.card}>
+                    <Card actions={<Button>Salvar</Button>} className={styles.card}>
 
                         <div className={styles.header}>
 
@@ -59,7 +60,7 @@ export default function Users() {
 
                     </Card>
 
-                    <Card btnText="Alterar">
+                    <Card actions={<Button>Alterar</Button>}>
 
                         <div className={styles.header}>
                         
@@ -79,7 +80,7 @@ export default function Users() {
 
                     </Card>
 
-                    <Card btnText="Escolher Foto">
+                    <Card actions={<Button>Escolher Foto</Button>}>
 
                         <div className={styles.header}>
 
