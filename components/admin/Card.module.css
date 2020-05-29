@@ -4,6 +4,13 @@
     width: 100%;
     flex-direction: column;
     margin-bottom: 60px;
+    background-color: var(--white);
+}
+
+.card-content {
+    padding: 10px 20px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .actions {

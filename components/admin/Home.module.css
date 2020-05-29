@@ -16,10 +16,8 @@
 }
 
 .user-info {
-    padding: 10px 5px 10px 20px;
-    align-items: center;
     justify-content: space-between;
-    background-color: var(--white);
+    width: 100%;
 }
 
 .user-data {
