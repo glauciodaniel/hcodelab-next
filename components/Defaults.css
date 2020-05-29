@@ -1,3 +1,7 @@
+#__next {
+    flex-direction: column;
+}
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -6,9 +10,7 @@
 body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture {
     display: flex;
 }
-#__next, main{
-    flex-direction: column;
-}
+
 body {
     margin: 0;
     flex-direction: column;
@@ -163,11 +165,7 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-    .page .page-header {
-        width: 100%;
-        flex-direction: column-reverse;
-        height: 18px;
-    }
+    
     .page header  {
         filter: none;
         align-items: flex-end;

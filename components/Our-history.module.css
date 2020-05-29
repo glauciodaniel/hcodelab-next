@@ -11,10 +11,10 @@
     height: 210px;
     width: 100%;
     background-size: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.8);
     flex-direction: column;
     justify-content: flex-end;
-    color: var(--white);
+    color: var(--whiteDark);
     padding: 1em;
 }
 
@@ -108,6 +108,24 @@
 }
 
 @media (min-width: 992px) {
+    .page .page-header {
+        width: 100%;
+        flex-direction: column-reverse;
+        height: 18px;
+    }
+    .page header  {
+        filter: none;
+        align-items: flex-end;
+    }
+    .page header li {
+        font-size: 30px;
+    }
+    .page header h1 {
+        font-size: 100px;
+        color: var(--white);
+        text-shadow: 0 3px 6px var(--black15);
+    }
+
     #ourHistory.page .columns {
         flex-direction: row;
     }
@@ -115,6 +133,7 @@
         margin: 4em;
     }
     #ourHistory.page .headerText {
+        height: 400px;
         background-image: url('/images/header-our-history@3x.png');
         background-position: 0px -24vw;
     }
