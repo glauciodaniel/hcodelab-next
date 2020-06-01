@@ -25,7 +25,7 @@ export default function Login(){
 
         console.log('chamou o login')
 +   
-      axios.post(`https://hcodelab-adonis.herokuapp.com/auth`, values)
+      axios.post(`https://hcodelab-adonis.herokuapp.com/auths`, values)
         .then(
             (res)=>{
                 const tokenData = res.data.token
