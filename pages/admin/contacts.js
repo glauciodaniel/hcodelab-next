@@ -6,6 +6,23 @@ import Button from '../../components/admin/Button'
 
 export default function Contacts() {
 
+    const contacts = [{
+        name: 'João Rangel',
+        date: '17/04/2020 às 00:45'
+    }, {
+        name: 'Glaucio Daniel',
+        date: '17/04/2020 às 00:45'
+    }, {
+        name: 'Djalma Sindeaux',
+        date: '17/04/2020 às 00:45'
+    }, {
+        name: 'Ronaldo Braz',
+        date: '17/04/2020 às 00:45'
+    }, {
+        name: 'Anthony Rafael',
+        date: '17/04/2020 às 00:45'
+    }]
+
     return (
         <Layout>
 
@@ -25,14 +42,12 @@ export default function Contacts() {
                         </thead>
 
                         <tbody>
-                            <tr>
-                                <td>João Rangel</td>
-                                <td>17/04/2020 às 00:45</td>
-                            </tr>
-                            <tr>
-                                <td>Glaucio Daniel</td>
-                                <td>17/04/2020 às 00:45</td>
-                            </tr>
+                            {contacts.map(contact => (
+                                <tr>
+                                    <td>{contact.name}</td>
+                                    <td>{contact.date}</td>
+                                </tr>
+                            ))}
                         </tbody>
 
                     </table>
