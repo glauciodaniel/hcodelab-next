@@ -50,7 +50,7 @@ export default function Register(){
         e.preventDefault()
 
 
-        axios.post(`http://localhost:3333/users`, values)
+        axios.post(`http://hcodelab-adonis.herokuapp.com/users`, values)
         .then(res => {
             e.reset()
             console.log('Parabéns',res)
