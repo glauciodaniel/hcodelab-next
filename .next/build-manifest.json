@@ -20,6 +20,10 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
+    "/admin/contacts": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/admin/users": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"

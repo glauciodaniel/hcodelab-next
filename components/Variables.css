@@ -24,6 +24,8 @@
     --grayE: #EBEAE7;
     --grayF: #F0F1F2;
     --grayC4: #C4C4C4;
+    --grayE0: #E0E0E0;
+    --gray9: #999999;
 }
 
 @media (prefers-color-scheme: dark) {

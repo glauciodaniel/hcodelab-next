@@ -1,0 +1,82 @@
+.container {
+    justify-content: space-between;    
+    width: 100%;
+    flex-direction: column;
+}
+
+.contacts, .messages {
+    background-color: var(--white);
+}
+
+.contacts {
+    padding: 15px 0;
+}
+
+.contacts table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.contacts td, .contacts th {
+    font-size: 14px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--grayE0);
+}
+
+.contacts tbody tr:nth-child(even) {
+    background-color: var(--grayF);
+}
+
+.messages {
+    margin-top: 30px;
+}
+
+.messages, .messageName, .messageTime {
+    flex-direction: column;
+}
+
+.messageHeader, .messageContent {
+    padding: 15px 20px;
+}
+
+.messageHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--grayF);
+}
+
+.messageName {
+    justify-content: center;
+}
+
+.messageName h2, .messageName h4 {
+    margin: 0;
+}
+
+.messageName h4 {
+    font-weight: 400;
+}
+
+.messageTime p {
+    color: var(--gray9);
+    margin: 0;
+}
+
+@media (min-width: 576px) {
+    .container {
+        flex-direction: row;
+    }
+    .messages {
+        margin: 0 0 0 10px;
+    }
+    .messages, .contacts {
+        flex: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        height: 100vh;
+    }
+}
