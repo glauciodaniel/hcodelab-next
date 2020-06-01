@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 import styles from '../components/Register.module.css';
 import React, {useState} from 'react';
 import axios from 'axios';
@@ -61,12 +62,8 @@ export default function Register(){
         <>
             <Header />
             <main id={styles.register} className={styles.page}>
-                    <div className={styles['page-header']}>
-                        <header>
-                            <h1>Cadastro</h1>
-                        </header>
                         <hr className="italy" />
-                    </div>
+                   
                     <section>
                         <div className={styles.image}></div>
                         <form onSubmit={hadleFormSubmit}>
@@ -93,7 +90,9 @@ export default function Register(){
                                 </div>
                                 <button type="submit">Cadastrar</button>
                             </div>
-                            <p>Se você já possui uma conta, <a href="login.html">clique aqui</a> para fazer o login.</p>
+                            <p>Se você já possui uma conta,  <Link href="/login">
+                                <a >clique aqui</a>
+                                    </Link> para fazer o login.</p>
                         </form>
                     </section>
                 </main>

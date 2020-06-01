@@ -11,6 +11,15 @@ body, div, article, aside, footer, header, main, nav, section, ul, ol, li, butto
     display: flex;
 }
 
+#content {
+    background-color: var(--grayE);
+    height: 100vh;
+    display: block;
+}
+
+#__next, main{
+    flex-direction: column;
+}
 body {
     margin: 0;
     flex-direction: column;
@@ -27,6 +36,13 @@ hr.italy {
     height: 18px;
     margin: 0;
     border: none;
+}
+
+.button-reset {
+    background: none;
+    border: none;
+    padding: 13px;
+    outline: none;
 }
 
 main {
@@ -165,7 +181,16 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-    
+    #content main {
+        width: calc(100vw - 300px);
+        position: absolute;
+        right: 0;
+    }
+    .page .page-header {
+        width: 100%;
+        flex-direction: column-reverse;
+        height: 18px;
+    }
     .page header  {
         filter: none;
         align-items: flex-end;

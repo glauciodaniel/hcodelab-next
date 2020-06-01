@@ -1,5 +1,17 @@
 import styles from '../components/Header.module.css'
 import React, {useState} from 'react'
+import Link from 'next/link'
+import LinkItem from './LinkItem'
+
+
+
+const LinkMenu = (itens) => (
+    <li>
+        <Link href={itens.link}>
+            <a title={itens.label}>{itens.label}</a>
+        </Link>
+    </li>
+)
 
 export default function Nav(props){
 
@@ -8,16 +20,15 @@ export default function Nav(props){
         <nav className={`${ styles.menu} ${styles[props.isOpen]}`}>
                     <div>
                         
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/our-history">Nossa História</a></li>
-                            <li><a href="/gallery">Galeria</a></li>
-                            <li><a href="/contact">Contato</a></li>
-                        </ul>
+                    <ul>
+                        {LinkItem.map((item)=> (
+                            <LinkMenu key={item.id} link={item.link} label={item.label} />
+                        ))}
+                    </ul>
                     </div>
-                    <a href="register" className={ styles['btn-register']}>
-                        Registre-se / Login
-                    </a>
+                    <Link href='register'>
+                        <a title='Cadastre-se/Login' className={ styles['btn-register']}>Registre-se / Login</a>
+                    </Link>
                 </nav>
     )
 }
