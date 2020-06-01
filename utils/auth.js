@@ -9,6 +9,8 @@ export async  function handleAuthSSR(ctx) {
     console.log('chamou o utils/auth')
   let token = null;
   if (ctx.req) {
+    
+    
     // ugly way to get cookie value from a string of values
     // good enough for demostration
     
