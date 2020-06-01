@@ -135,9 +135,9 @@
 #home .know img {
     width: 194px;
 }
-#home .know1 p,
-#home .know1 a,
-#home .know2 {
+#home .know-1 p,
+#home .know-1 a,
+#home .know-2 {
     display: none;
 }
 
@@ -201,30 +201,30 @@
         flex-direction: row;
         color: var(--gray5);
     }
-    #home .know1,
-    #home .know2,
+    #home .know-1,
+    #home .know-2,
     #home > img {
         flex: 1;
     }
-    #home .know1 {
+    #home .know-1 {
         flex-direction: column;
     }
-    #home .know1 p,
-    #home .know1 a,
-    #home .know2 {
+    #home .know-1 p,
+    #home .know-1 a,
+    #home .know-2 {
         display: flex;
     }
-    #home .know1 h1 {
+    #home .know-1 h1 {
         font-size: 60px;
         font-weight: bold;
         text-align: left;
         margin: 0;
     }
-    #home .know1 p {
+    #home .know-1 p {
         color: var(--gray5);
         margin-bottom: 2em;
     }
-    #home .know1 a {
+    #home .know-1 a {
         border: var(--gray6) 1px solid;
         padding: .75em 0;
         border-radius: 10px;
@@ -238,17 +238,17 @@
     #home .know img {
         margin: 0 6em;
     }
-    #home .know2 {
+    #home .know-2 {
         flex-direction: column;
         justify-content: flex-start;
         align-self: stretch;
     }
-    #home .know2 dt {
+    #home .know-2 dt {
         font-weight: bold;
         margin: 1em 0;
         font-size: 22px;
     }
-    #home .know2 dd {
+    #home .know-2 dd {
         margin: 0;
         font-size: 16px;
     }
