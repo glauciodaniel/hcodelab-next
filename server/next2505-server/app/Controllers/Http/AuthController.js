@@ -9,7 +9,11 @@ class AuthController {
         return token
     }
 
-
+    async me({ auth }){
+      let user = auth.user.toJSON()
+      delete user.password
+      return user
+    }
 }
 
 module.exports = AuthController

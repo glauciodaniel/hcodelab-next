@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+#__next {
+    flex-direction: column;
+}
+>>>>>>> 52b3476b5e70a908327d4905b6f195dd9df73dee
 
 .page {
     flex-direction: column;
@@ -112,6 +118,7 @@
     background-color: var(--green-active);
 }
 
+<<<<<<< HEAD
 #register a {
     color: var(--red);
 }
@@ -123,6 +130,8 @@
     display: none;
 }
 
+=======
+>>>>>>> 52b3476b5e70a908327d4905b6f195dd9df73dee
 #register.page header {
     background-image: url('/images/header-register.png');
 }
@@ -153,7 +162,12 @@
     }
 }
 
+<<<<<<< HEAD
 @media (min-width: 1200px) {
+=======
+@media (min-width: 992px) {
+    
+>>>>>>> 52b3476b5e70a908327d4905b6f195dd9df73dee
     .page header  {
         filter: none;
         align-items: flex-end;
