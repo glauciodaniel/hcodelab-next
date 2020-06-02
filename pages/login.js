@@ -39,19 +39,26 @@ export default function Login(){
         <>
             <Header />
                 <main id={styles.login} className={styles.page}>
+                    <div className={styles['page-header']}>
                         <hr className="italy" />
-                    
+                    </div>
                     <section>
                         <div className={styles.image}></div>
                         <form onSubmit={handleFormSubmit}>
                             <div>
                                 <div className={styles.fields}>
                                     <div className={styles.field}>
-                                        <input type="email" name="email" id="email" onChange={handleInputChange} />
+
+                                        <input type="email" name="email" id="email" onChange={handleInputChange}
+                                        onFocus={handleInputChange} />
+
                                         <label htmlFor="email">E-mail</label>
                                     </div>
                                     <div className={styles.field}>
-                                        <input type="password" name="password" id="password" onChange={handleInputChange} />
+
+                                        <input type="password" name="password" id="password" onChange={handleInputChange}
+                                        onFocus={handleInputChange} />
+
                                         <label htmlFor="password">Senha</label>
                                     </div>
                                 </div>
@@ -60,10 +67,7 @@ export default function Login(){
                                     <a href="#">Esqueci a senha</a>
                                 </div>
                             </div>
-                            <p>Você ainda não tem conta, 
-                                <Link href="/register">
-                                <a >clique aqui</a>
-                                    </Link> e cadastre-se.</p>
+                            <p>Você ainda não tem conta, <a href="/register">clique aqui</a> e cadastre-se.</p>
                         </form>
                     </section>
                 </main>

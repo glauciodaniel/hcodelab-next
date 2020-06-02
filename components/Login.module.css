@@ -115,6 +115,10 @@
     background-color: var(--green-active);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52b3476b5e70a908327d4905b6f195dd9df73dee
 #login.page header {
     background-image: url('/images/header-login.png');
 }
@@ -135,10 +139,13 @@
     display: none;
 }
 
+<<<<<<< HEAD
 .show-desktop {
     display: none;
 }
 
+=======
+>>>>>>> 52b3476b5e70a908327d4905b6f195dd9df73dee
 @media (min-width: 576px) {
     .page header {
         height: 20vw;
@@ -149,7 +156,11 @@
     }
 }
 
+<<<<<<< HEAD
 @media (min-width: 1200px) {
+=======
+@media (min-width: 992px) {
+>>>>>>> 52b3476b5e70a908327d4905b6f195dd9df73dee
     .page header  {
         filter: none;
         align-items: flex-end;
@@ -161,6 +172,7 @@
         font-size: 100px;
         text-shadow: 0 3px 6px var(--black15);
     }
+<<<<<<< HEAD
     #login form .fields {
         flex-direction: row;
     }
@@ -181,6 +193,28 @@
         min-height: 250px;
     }
     #login form button {
+=======
+    #form form .fields {
+        flex-direction: row;
+    }
+    #form form .fields .field {
+        margin-right: 1em;
+    }
+    #form form .fields .field:last-child {
+        margin-right: 0;
+    }
+    #form form .actions {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #form form .actions a {
+        text-align: right;
+    }
+    #form form .field textarea {
+        min-height: 250px;
+    }
+    #form form button {
+>>>>>>> 52b3476b5e70a908327d4905b6f195dd9df73dee
         max-width: 340px;
     }
     hr.italy {
@@ -236,6 +270,7 @@
         left: 0;
         padding-bottom: 10px;
     }
+<<<<<<< HEAD
 }
 
 
@@ -249,4 +284,6 @@
     .hide-desktop {
         display: none;
     }
+=======
+>>>>>>> 52b3476b5e70a908327d4905b6f195dd9df73dee
 }
