@@ -24,8 +24,8 @@ export default function Login(){
         e.preventDefault()
 
         console.log('chamou o login')
-+   
-      axios.post(`https://hcodelab-adonis.herokuapp.com/auths`, values)
+   
+      axios.post(`http://localhost:3333/auth`, values)
         .then(
             (res)=>{
                 const tokenData = res.data.token

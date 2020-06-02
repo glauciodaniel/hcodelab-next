@@ -10,73 +10,73 @@ export default function Index() {
         id: 1,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 2,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 3,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 4,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 5,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 6,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 7,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 8,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 9,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 10,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 11,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }, {
         id: 12,
         name: 'João Rangel',
         email: 'joaohcrangel@gmail.com',
-        date: '18 de março de 2020',
+        birth_at: '18 de março de 2020',
         photo: 'user-photo.png'
     }];
 
@@ -99,7 +99,7 @@ export default function Index() {
                                 
                                 <p>{user.email}</p>
 
-                                <p>{user.date}</p>
+                                <p>{user.birth_at}</p>
 
                             </div>
 
